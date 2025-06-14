@@ -6,7 +6,7 @@
 }
 
 main {
-    background: url('./Assets/fundoBingo.png');
+    background: url('../Assets/fundoBingo.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     height: 100vh;
@@ -32,7 +32,7 @@ main {
 }
 
 #containerBola {
-    background: url('./Assets/Bola.png');
+    background: url('../Assets/Bola.png');
     background-size: 25% 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -62,9 +62,12 @@ main {
 }
 
 
-#containerSorteio {
+#containerSorteio, #containerSorteioOrdenado {
     height: 90%;
     width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 #titleSorteio {
@@ -85,11 +88,9 @@ main {
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
-
-
 }
 
-#btnSorteio {
+.button {
     all: unset;
     width: 10vw;
     height: 5vh;
@@ -97,14 +98,21 @@ main {
     text-align: center;
     border-radius: 12px;
     font-size: 1..8vw;
+    transition: all ease 0.3s;
 }
 
-#btnSorteio:hover {
+.button:hover {
     background: #d3a303;
     border: 1px solid #000;
     color: #000;
+    transform: scale(1.02);
 }
 
-#btnInicial:active{
+.button:active{
     transform: scale(0.9);
+}
+
+.containerSorteio {
+    color: #ffff;
+    text-align: center;
 }

@@ -1,0 +1,55 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+main {
+	background: url('../Assets/fundoBingo.png');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	flex-direction: column;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+#containerImg {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#imgPrincipal {
+	width: 25vw;
+}
+
+#btnInicial {
+	all: unset;
+	width: 15vw;
+	height: 7vh;
+	background: #fec305;
+	border-radius: 12px;
+	color: #aa3c11;
+	text-align: center;
+	transition: all ease 0.3s;
+	cursor: pointer;
+}
+
+#btnInicial:hover {
+	background: #d3a303;
+	border: 1px solid #000;
+	color: #000;
+    transform: scale(1.02);
+}
+
+#btnInicial:active {
+	transform: scale(0.9);
+}
